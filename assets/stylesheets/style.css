@@ -92,12 +92,12 @@ label{
 .radio-toolbar label {
 
   display: inline-block;
-  background-color: #ddd;
+  background-color: #ccffff;
   padding: 4px 11px;
   font-family: "Muli";
   font-size: 16px;
   cursor: pointer;
-  border-style: double;
+  border-style: dotted;
 	
 }
 
