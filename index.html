@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
- 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Educational Attainment in the United States</title>
     <link href="assets/stylesheets/style.css" rel="stylesheet"/>
@@ -90,5 +90,23 @@
 <source src="button-25.ogg"></source>
 </audio>	
 <div id="sounddiv"><bgsound id="sound"></div>
+<style>
+	@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
 </body>
 </html>
