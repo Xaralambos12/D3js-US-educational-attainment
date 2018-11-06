@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
+	
 <head>
     <meta charset="UTF-8">
     <title>Educational Attainment in the United States</title>
     <link href="assets/stylesheets/style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script type="text/javascript" src="sound-mouseover.js"></script>
+    <script type="text/javascript" src="s-m.js"></script>
     <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+	
 </head>
   <header>
        <nav>
     <ul>
-      <li><a href="#top" onmouseover="playclip();">Top</a></li>
+      <li><a href="#top" onmouseover="playclip();" >Top</a></li>
       <li><a href="#national" onmouseover="playclip();">National</a></li>
       <li><a href="#regional" onmouseover="playclip();">Regional</a></li>
       <li><a href="#state" onmouseover="playclip();">State-Level</a></li>
     <ul>
         </nav>
-	    </header>
-     
+    </header>
+	 
 <body>
     <a name="national"></a>
     <h1 class="title" onmouseover="responsiveVoice.speak('Educational Attainment in the United States');" onmouseleave="responsiveVoice.cancel();">Educational Attainment in the United States</h1>
@@ -28,7 +30,7 @@
     <h2 class="subtitle" onmouseover="responsiveVoice.speak('Nation-Wide Education Level of Population in Schooling');" onmouseleave="responsiveVoice.cancel();">Nation-Wide Education Level of Population in Schooling</h2>
 	
     <div class="container">
-	<svg id="pie-chart" viewBox="0 0 960 450">
+	<svg id="pie-chart" onmouseover="responsiveVoice.speak('Pie Chart of Nation-Wide Education Level of Population in Schooling');" viewBox="0 0 960 450">
 	</svg>
     </div>
     <a name="regional"></a>
@@ -48,7 +50,7 @@
         </div>
     </form>
 	<p></p>
-    <div id="chart" align="center"></div>
+    <div id="chart"onmouseover="responsiveVoice.speak('Chart of Educational Attainment: Region-level Breakdown of University Students');" align="center"></div>
 	<a name="state"></a>
     <br><br>
     <h2 class="subtitle" onmouseover="responsiveVoice.speak('Education Level of Population in Schooling: State-level Breakdown');" onmouseleave="responsiveVoice.cancel();">Education Level of Population in Schooling: State-level Breakdown</h2>
@@ -61,8 +63,8 @@
             <label for="radio2" onmouseover="responsiveVoice.speak('Students (in number of people)');" onmouseleave="responsiveVoice.cancel();">Students (in number of people)</label>
     </div>
     </form>
-    <div>
-        <svg "id=stacked-bar-chart" align="center"></svg>
+	<div>
+        <svg id="stacked-bar-chart" onmouseover="responsiveVoice.speak('Stacked bar chart of Education Level of Population in Schooling: State-level Breakdown');" align="center"></svg>
     </div>
 
     
@@ -82,10 +84,13 @@
         }
     });
 });
-
+   	
 /* scrollTop() >= 240
    Should be equal the the height of the header
- */
+   /*  
+	       <meta name="viewport" content="width=device-width, initial-scale=1.0"> den doulevi den ksero giati!!
+	*/
+	      
 </script>
 <audio>
 <source src="button-25.mp3"></source>
