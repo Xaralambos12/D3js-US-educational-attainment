@@ -71,6 +71,18 @@
 <script src="assets/scripts/script_2.js"></script>
 <script src="assets/scripts/script_3.js"></script>
 	
+<script>
+    $( document ).ready(function() {
+      $(window).scroll(function(){
+        if ($(window).scrollTop() >= 300) {
+           $('nav').addClass('fixed-header');
+        }
+        else {
+           $('nav').removeClass('fixed-header');
+        }
+    });
+});
+
 function national() {
 	document.getElementById("regionlevel").style.display = "none";
 	document.getElementById("tree-form").style.display = "none";
@@ -82,6 +94,7 @@ function national() {
 	document.getElementById("nationwide").style.display = "block";
 	
 }
+	
 function regional() {
 	document.getElementById("stack-form").style.display = "none";
 	document.getElementById("statelevell").style.display = "none";
@@ -94,6 +107,7 @@ function regional() {
 	
 	
 }
+	
 function statelevel() {
 	document.getElementById("tree-form").style.display = "none";
 	document.getElementById("regionlevel").style.display = "none";
@@ -104,18 +118,6 @@ function statelevel() {
 	document.getElementById("stack-form").style.display = "block";
 	document.getElementById("statelevell").style.display = "block";
 }
-
-<script>
-    $( document ).ready(function() {
-      $(window).scroll(function(){
-        if ($(window).scrollTop() >= 300) {
-           $('nav').addClass('fixed-header');
-        }
-        else {
-           $('nav').removeClass('fixed-header');
-        }
-    });
-});
 
 /* scrollTop() >= 240
    Should be equal the the height of the header
