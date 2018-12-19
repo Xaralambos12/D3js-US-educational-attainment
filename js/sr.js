@@ -19,17 +19,7 @@
                                    'rgb(295, 990, 12)',  ],
                                
                 data: [6.14, 6.11, 5.48, 4.42, 7.15, 6.44, 5.96],
-               }, 
-              
-           /*   {
-                label: "Sales per month in $", // Graph label
-                backgroundColor: 'rgb(255, 99, 132, 0.5)',
-                                   
-                borderColor: 'blue', //this field also use Hex values
-                borderWidth: 3,
-                data: [34, 20, 15, 12, 30, 40, 55, 65, 75, 80, 70, 50],
-               }              
-             */
+               },
               
             ]
         },
@@ -42,11 +32,7 @@
                   //responsive:true,
                   //maintainAspectRatio: false
                   cutoutPercentage: 90,    //50% is the default. A doughnut pie is a 50% of normal pie chart
-                  
-                   title:{
-                     display: true,
-                     text: 'Average weekly hours spent playing video games in selected countries worldwide as of January 2018',
-                   }
+                 
 
                   
                   
