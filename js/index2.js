@@ -50,7 +50,7 @@ d3.json("apiPlaceholderURL", function(error, data) {
       .attr("dy", "2.5em")
       .attr("dx", width/2 - margin.left)
       .attr("text-anchor", "start")
-      .text("Ποσοστό (%) νοικοκυριών με πρόσβαση στο διαδίκτυο από την κατοικία");
+      .text("Years");
 
   g.append("g")
       .attr("class", "axis axis--y")
